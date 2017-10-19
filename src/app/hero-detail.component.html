@@ -1,0 +1,29 @@
+<div *ngIf="hero">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <img src="{{hero.image}}" alt={{hero.name}} height="250" width="250">
+  </div>
+  <div>
+    <label>Name: </label>{{hero.name}}
+  </div>
+  <div>
+    <label>Alter-Ego: </label>{{hero.alterEgo}}
+  </div>
+  <div>
+    <label>Description: </label>{{hero.description}}
+  </div>
+  <div>
+    <label>Powers: </label>{{hero.powers}}
+  </div>
+  <div>
+    <label>Birth Date: </label>{{hero.birthDate}}
+  </div>
+  <div>
+    <label>Strength: </label>{{hero.strength}}
+  </div>
+
+
+  <button (click)="goBack()">Back</button>
+  <button *ngIf="hero.modifiable" (click)="goEdit(hero.id)">Edit</button>
+
+</div>

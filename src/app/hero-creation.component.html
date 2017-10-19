@@ -1,0 +1,33 @@
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <img src="{{hero.image}}" alt={{hero.name}} height="250" width="250">
+  </div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name">
+  </div>
+  <div>
+    <label>Alter-Ego: </label>
+    <input [(ngModel)]="hero.alterEgo" placeholder="alterEgo">
+  </div>
+  <div>
+    <label>Description: </label>
+    <input [(ngModel)]="hero.description" placeholder="description">
+  </div>
+  <div>
+    <label>Birth Date: </label>
+    <input [(ngModel)]="hero.birthDate" placeholder="birthDate">
+  </div>
+  <div>
+    <label>Strength: </label>
+    <input [(ngModel)]="hero.strength" placeholder="strength">
+  </div>
+  <div>
+    <label>Image URL: </label>
+    <input [(ngModel)]="hero.image" placeholder="image">
+  </div>
+
+
+  <button (click)="goBack()">Back</button>
+  <button (click)="saveHeroe()">Save</button>
+
